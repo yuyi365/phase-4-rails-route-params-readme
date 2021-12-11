@@ -1,3 +1,3 @@
-Rails.application.routes.draw do
-  get '/cheeses', to: 'cheeses#index'
-end
+Rails.application.routes.draw { get '/cheeses', to: 'cheeses#index' }
+
+Rails.application.routes.draw { get '/cheeses/:id', to: 'cheeses#show' }
